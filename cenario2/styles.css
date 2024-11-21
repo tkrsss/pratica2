@@ -1,0 +1,114 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+
+.form-container, .filter-container, .table-container {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select, button {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+
+.status-pendente {
+    color: orange;
+}
+
+.status-em-andamento {
+    color: blue;
+}
+
+.status-finalizada {
+    color: green;
+}
+
+.filter-container {
+    margin-top: 20px;
+}
+
+select {
+    margin: 5px 0 20px;
+    padding: 8px;
+}
+
+button {
+    background-color: #2196F3;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b7dda;
+}

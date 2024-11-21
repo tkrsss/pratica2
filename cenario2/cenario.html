@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Solicitações</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gerenciamento de Solicitações</h1>
+
+        
+        <div class="form-container">
+            <h2>Cadastrar Cliente</h2>
+            <form id="formCliente">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" required placeholder="Ex: 123.456.789-00">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
+
+                <button type="submit">Cadastrar Cliente</button>
+            </form>
+            <div class="message" id="message"></div>
+        </div>
+
+        
+        <div class="filter-container">
+            <h2>Filtrar Solicitações</h2>
+            <label for="status">Status</label>
+            <select id="status">
+                <option value="">Selecione</option>
+                <option value="pendente">Pendente</option>
+                <option value="em andamento">Em Andamento</option>
+                <option value="finalizada">Finalizada</option>
+            </select>
+
+            <label for="urgencia">Urgência</label>
+            <select id="urgencia">
+                <option value="">Selecione</option>
+                <option value="baixa">Baixa</option>
+                <option value="média">Média</option>
+                <option value="alta">Alta</option>
+            </select>
+
+            <label for="funcionario">Funcionário</label>
+            <select id="funcionario">
+                <option value="">Selecione</option>
+                <option value="funcionario1">Funcionário 1</option>
+                <option value="funcionario2">Funcionário 2</option>
+                <option value="funcionario3">Funcionário 3</option>
+            </select>
+
+            <button onclick="filterSolicitations()">Filtrar</button>
+        </div>
+
+       
+        <div class="table-container">
+            <h2>Solicitações</h2>
+            <table id="tabelaSolicitacoes">
+                <thead>
+                    <tr>
+                        <th>ID Solicitação</th>
+                        <th>Cliente</th>
+                        <th>Descrição</th>
+                        <th>Urgência</th>
+                        <th>Status</th>
+                        <th>Funcionário</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
